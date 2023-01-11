@@ -4,7 +4,7 @@ import React from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-import Beast from './Beast';
+
 
 
 // 2nd Class component
@@ -14,7 +14,6 @@ render(){
     <>
   <Header />
   <Main />
-  <Beast />
   <Footer />
 
    </>
