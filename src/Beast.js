@@ -2,7 +2,7 @@ import React from "react";
 import './Beast.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import { Col } from "react-bootstrap";
 
 
 
@@ -17,25 +17,33 @@ class Beast extends React.Component {
 
   handleFavorite = () => {
     this.setState({
-      favorite: this.state.favorite + 1
-    })
+      favorite: this.state.favorite + 1,
+      // this.props.handleOpenModal()
+    }
+    );
+    this.props.handleOpenModal(this.props.title);
   }
+  handleFavoriteClick = () => {
+    this.props.handleOpenModal(this.props.name)
+  }
+
 
   render() {
     return (
       <>
-      
-      
-        <Card style={{ width: '18rem' }}>
-          <p>{this.props.title}</p>
-          <p>💙{this.state.favorite}Favorite</p>
-          <p onClick={this.handleFavorite}>Click for favorite!</p>
-          <Card.Img src={this.props.image_url} alt={this.props.description} />
-          <p>{this.props.description}</p>
-          <Button>Favorite</Button>
 
-        </Card>
-        
+        <Col>
+          <Card.Title onClick={this.props.handleOpenModal}></Card.Title>
+          <Card style={{ width: '18rem' }}>
+            <p>{this.props.title}</p>
+            <p>💙{this.state.favorite}Favorite</p>
+            <p >Click for favorite!</p>
+            <Card.Img src={this.props.image_url} alt={this.props.description} />
+            <p>{this.props.description}</p>
+            <Button onClick={this.handleFavoriteClick}>Favorite</Button>
+
+          </Card>
+        </Col>
 
       </>
     )
