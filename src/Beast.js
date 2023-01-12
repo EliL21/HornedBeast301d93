@@ -21,11 +21,11 @@ class Beast extends React.Component {
       // this.props.handleOpenModal()
     }
     );
-    this.props.handleOpenModal(this.props.title);
+    this.props.handleOpenModal(this.props.title, this.props.image_url, this.props.description)
   }
-  handleFavoriteClick = () => {
-    this.props.handleOpenModal(this.props.name)
-  }
+  // handleFavoriteClick = () => {
+  //   this.props.handleOpenModal(this.props.name)
+  // }
 
 
   render() {
@@ -40,7 +40,7 @@ class Beast extends React.Component {
             <p >Click for favorite!</p>
             <Card.Img src={this.props.image_url} alt={this.props.description} />
             <p>{this.props.description}</p>
-            <Button onClick={this.handleFavoriteClick}>Favorite</Button>
+            <Button onClick={this.handleFavorite}>Favorite</Button>
 
           </Card>
         </Col>
