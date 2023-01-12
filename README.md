@@ -1,17 +1,17 @@
 
 # HornedBeast301d93
 
-## Feature 1: Display Images ________________________________
+## Feature 1: Display a Modal  ________________________________
 
-Estimate of time needed to complete: _15mins____
+Estimate of time needed to complete: _2 hours____
 
 Start time: _1300____
 
-Finish time: _1315____
+Finish time: _1700___
 
-Actual time needed to complete: _15mins____
+Actual time needed to complete: _4 hours____
 
-## Feature 2: Allow Usres to Favorite Individual Beast ________________________________
+<!-- ## Feature 2: Allow Usres to Favorite Individual Beast ________________________________
 
 Estimate of time needed to complete: _30min____
 
@@ -29,4 +29,4 @@ Start time: __1405___
 
 Finish time: _1425____
 
-Actual time needed to complete: _20min____
+Actual time needed to complete: _20min____ -->
