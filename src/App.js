@@ -6,7 +6,7 @@ import Main from './Main';
 import SelectedBeast from './SelectedBeast';
 import Footer from './Footer';
 import data from "./data/data.json"
-import Modal  from 'react-bootstrap';
+
 
 
 
